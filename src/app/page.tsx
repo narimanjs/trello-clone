@@ -1,11 +1,14 @@
-import Image from "next/image";
+import Hero from "@/components/hero";
+import homeImg from "public/home.jpg";
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-      <div className='z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex'>
-        Hello Next.js
-      </div>
-    </main>
+    <div>
+      <Hero
+        imgData={homeImg}
+        imgAlt='car factory'
+        title='Professional Cloud Hoisting'
+      />
+    </div>
   );
 }
